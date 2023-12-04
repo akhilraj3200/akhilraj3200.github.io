@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is my layout</title>
+    <link rel = "stylesheet" href ="/css/themes/default.min.css" >
+    
+    <link rel="stylesheet" href="<%= 'css/layout.css'%>">
+    <link rel="stylesheet" href = "<%= 'css/header.css' %>">
+    <link rel="stylesheet" href = "<%= 'css/footer.css' %>">
+    <link rel="stylesheet" href = "<%= 'css/comment.css'%>" >
+    <link rel = "stylesheet" href = "<%= 'css/friends.css'%>">
+    <link rel="stylesheet" href = "<%= 'css/home.css'%>">
+    <link rel="stylesheet" href="<%= 'css/profile.css'%>">
+    <script
+src="https://code.jquery.com/jquery-3.7.0.min.js"
+integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+crossorigin="anonymous"></script>
+  
+    <%- style %>
+    <%- script %>
+
+</head>
+<body class = "layout">
+    <%- include('_header') %>
+ 
+    <div>
+     
+    <%- body %>
+
+        </div>
+    <%- include('_footer') %>
+    <%- script %>
+
+
+</body>
+
+
+
+
+</html>
