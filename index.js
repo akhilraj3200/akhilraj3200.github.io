@@ -1,5 +1,5 @@
 const express = require('express');
-const port = 8000;
+const port = 10000;
 const db = require('./config/mongoose');
 const bodyparser = require('body-parser')
 const app = express();
